@@ -1,0 +1,25 @@
+---
+/* Layout.astro */
+import Background from '../components/Background.astro';
+import DesktopIcons from '../components/DesktopIcons.astro';
+import Taskbar from '../components/Taskbar.astro';
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Andrew | portfolio</title>
+	</head>
+	<body>
+		<Background>
+			<DesktopIcons />
+			<Taskbar client:visible />
+			<slot />
+		  </Background>
+	</body>
+</html>

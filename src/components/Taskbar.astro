@@ -1,0 +1,22 @@
+---
+/* Taskbar.astro */
+import windows from "../../public/icon-win.png";
+const now = new Date();
+const currentTime = now.toLocaleTimeString();
+---
+
+<div
+  class="bg-blue-700 text-white fixed bottom-0 left-0 right-0 flex justify-between items-center h-12"
+>
+  <div class="flex items-center space-x-2 flex-grow h-full">
+    <a
+      class="bg-green-600 hover:bg-green-700 px-2 py-1 pr-6 pl-3 rounded-r-full h-full flex items-center justify-center font-bold text-xl shadow-2xl italic"
+      >
+      <img src={windows.src} alt="Icono" class="mr-2 h-7 w-7">
+      Start</a
+    >
+  </div>
+  <div class="flex items-center space-x-2 px-4 bg-blue-500 h-full shadow-2xl">
+    <span>{currentTime}</span>
+  </div>
+</div>

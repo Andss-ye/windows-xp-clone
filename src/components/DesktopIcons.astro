@@ -1,0 +1,31 @@
+---
+/* Desktopicons.astro */
+import cmd from "../../public/cmd.png";
+import exp from "../../public/exp.png";
+import est from "../../public/estudios.png";
+import CV from "../../public/CV.png";
+---
+
+<div class="absolute top-10 left-10">
+    <div class="flex flex-col space-y-4">
+      <div class="relative">
+        <img src={cmd.src} alt="Mis Proyectos" class="w-16 h-16 cursor-pointer hover:scale-110 transition-transform duration-300 ml-4" />
+        <p class="text-center text-white">Consola</p>
+      </div>
+      <div class="relative">
+        <img src={exp.src} alt="Experiencia" class="w-16 h-16 cursor-pointer hover:scale-110 transition-transform duration-300 ml-4" />
+        <p class="text-center text-white">Mi equipo</p>
+      </div>
+      <div class="relative">
+        <img src={est.src} alt="Estudios" class="w-16 h-16 cursor-pointer hover:scale-110 transition-transform duration-300 ml-4" />
+        <p class="text-center text-white">Archivos</p>
+      </div>
+      <div class="relative">
+        <img src={CV.src} alt="CV" class="w-16 h-16 cursor-pointer hover:scale-110 transition-transform duration-300 ml-4" />
+        <p class="text-center text-white">Carpeta</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
